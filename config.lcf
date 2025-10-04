@@ -84,6 +84,8 @@ US = NameRegex, FilterKey = "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|�
 FINAL,✈️策略选择
 
 [Remote Rule]
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/PCDN.lsr, policy=REJECT, tag=PCDN, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/Media-Direct.lsr, policy=DIRECT, tag=CN Media, enabled=true
 https://anti-ad.net/surge.txt, policy=🚫广告拦截, tag=anti-AD, enabled=true
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list, policy=🚫广告拦截, tag=AdRules AdBlock List, enabled=true
 https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge-RULE-SET.list, policy=🚫广告拦截, tag=AWAvenue-Ads-Rule, enabled=true
