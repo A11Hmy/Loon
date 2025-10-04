@@ -118,9 +118,9 @@ https://rule.kelee.one/Loon/Spotify.lsr, policy=Spotify, tag=Spotify, enabled=tr
 [Script]
 
 [Plugin]
-https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/Netisp-x.plugin, enabled=true
-https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/NodeTools.plugin, enabled=true
-https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/StreamingMedia.plugin, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/Netisp-x.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/NodeTools.lpx, enabled=true
+https://raw.githubusercontent.com/sooyaaabo/Loon/main/Plugin/StreamingMedia.lpx, enabled=true
 
 [Mitm]
 hostname = 
