@@ -47,6 +47,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 ⚠️韩国兜底 = fallback,KR,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/kr.png
 ⚡️美国优选 = url-test,US,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/us.png
 ⚠️美国兜底 = fallback,US,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/us.png
+🚫广告拦截 = select,REJECT,DIRECT,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/adblock.png
 Google = select,✈️策略选择,🌍全球手动,⚡️香港优选,⚠️香港兜底,⚡️台湾优选,⚠️台湾兜底,⚡️日本优选,⚠️日本兜底,⚡️韩国优选,⚠️韩国兜底,⚡️美国优选,⚠️美国兜底,⚡️狮城优选,⚠️狮城兜底,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/google.png
 Microsoft = select,DIRECT,✈️策略选择,🌍全球手动,⚡️香港优选,⚠️香港兜底,⚡️台湾优选,⚠️台湾兜底,⚡️日本优选,⚠️日本兜底,⚡️韩国优选,⚠️韩国兜底,⚡️美国优选,⚠️美国兜底,⚡️狮城优选,⚠️狮城兜底,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/microsoft.png
 Apple = select,DIRECT,✈️策略选择,🌍全球手动,⚡️香港优选,⚠️香港兜底,⚡️台湾优选,⚠️台湾兜底,⚡️日本优选,⚠️日本兜底,⚡️韩国优选,⚠️韩国兜底,⚡️美国优选,⚠️美国兜底,⚡️狮城优选,⚠️狮城兜底,img-url = https://raw.githubusercontent.com/A11Hmy/Loon/master/icon/apple.png
@@ -83,9 +84,9 @@ US = NameRegex, FilterKey = "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|�
 FINAL,✈️策略选择
 
 [Remote Rule]
-https://rule.kelee.one/Loon/ChinaMax.lsr, policy=DIRECT, tag=ChinaMax, enabled=true
-https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
-https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGION, enabled=true
+https://anti-ad.net/surge.txt, policy=🚫广告拦截, tag=anti-AD, enabled=true
+https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list, policy=🚫广告拦截, tag=AdRules AdBlock List, enabled=true
+https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge-RULE-SET.list, policy=🚫广告拦截, tag=AWAvenue-Ads-Rule, enabled=true
 https://rule.kelee.one/Loon/Google.lsr, policy=Google, tag=Google, enabled=true
 https://rule.kelee.one/Loon/Microsoft.lsr, policy=Microsoft, tag=Microsoft, enabled=true
 https://rule.kelee.one/Loon/Apple.lsr, policy=Apple, tag=Apple, enabled=true
@@ -112,6 +113,9 @@ https://rule.kelee.one/Loon/Instagram.lsr, policy=Instagram, tag=Instagram, enab
 https://rule.kelee.one/Loon/Netflix.lsr, policy=Netflix, tag=Netflix, enabled=true
 https://rule.kelee.one/Loon/Disney.lsr, policy=Disney, tag=Disney, enabled=true
 https://rule.kelee.one/Loon/Spotify.lsr, policy=Spotify, tag=Spotify, enabled=true
+https://rule.kelee.one/Loon/ChinaMax.lsr, policy=DIRECT, tag=ChinaMax, enabled=true
+https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGION, enabled=true
 
 [Rewrite]
 
