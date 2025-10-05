@@ -1,6 +1,6 @@
 #Loon Config
-#Date: 2025.10.04
-#Version: 3.0
+#Date: 2025.10.05
+#Version: 4.0
 #Author: A11Hmy（A11）
 #Github: https://github.com/A11Hmy
 
@@ -115,6 +115,7 @@ https://rule.kelee.one/Loon/Instagram.lsr, policy=Instagram, tag=Instagram, enab
 https://rule.kelee.one/Loon/Netflix.lsr, policy=Netflix, tag=Netflix, enabled=true
 https://rule.kelee.one/Loon/Disney.lsr, policy=Disney, tag=Disney, enabled=true
 https://rule.kelee.one/Loon/Spotify.lsr, policy=Spotify, tag=Spotify, enabled=true
+https://rule.kelee.one/Loon/Global.lsr, policy=✈️策略选择, tag=Global, enabled=true
 https://rule.kelee.one/Loon/ChinaMax.lsr, policy=DIRECT, tag=ChinaMax, enabled=true
 https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGION, enabled=true
